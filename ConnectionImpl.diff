@@ -1,0 +1,17 @@
+953c953
+< 		if (versionMeetsMinimum(4, 1, 0)) {
+---
+> 		if (false && versionMeetsMinimum(4, 1, 0)) {
+3490c3490
+< 			if (versionMeetsMinimum(5, 0, 2)) {
+---
+> 			if (false && versionMeetsMinimum(5, 0, 2)) {
+3953,3960d3952
+< 			if (versionMeetsMinimum(5, 0, 2)) {
+< 				results = stmt.executeQuery(versionComment + "SELECT @@session.auto_increment_increment");
+< 				
+< 				if (results.next()) {
+< 					this.serverVariables.put("auto_increment_increment", results.getString(1));
+< 				}
+< 			}
+< 			
